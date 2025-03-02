@@ -10,7 +10,7 @@ function Register() {
 
   const handleRegister = async (data) => {
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', data);
+      const res = await axios.post('https://app-2-rn6r.onrender.com/api/auth/register', data);
       localStorage.setItem('token', res.data.token);
       navigate('/dashboard');
     } catch (error) {
